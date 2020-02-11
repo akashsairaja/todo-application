@@ -1,0 +1,27 @@
+{
+  "name": "nodejs",
+  "version": "1.1.1",
+  "description": "back-end starter kit for nodejs ,mongodb , express with simple todo project",
+  "main": "index",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "author": "[akashsairaja@gmail.com]",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.8.11",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:akashsairaja/todo-application.git"
+  }
+}

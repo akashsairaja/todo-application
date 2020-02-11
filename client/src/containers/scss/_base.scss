@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f4f7;
+}
+
+$color-additional: #999999;
+
+$color-accent: #4ce1b6;
+$color-accent-hover: darken($color-accent, 10%);
+$color-additional: #999999;
+$color-additional-hover: darken($color-additional, 10%);
+
+$color-yellow: #f6da6e;
+$color-yellow-hover: darken($color-yellow, 10%);
+
+$color-violet: #c88ffa;
+
+$color-red: #ff4861;
+$color-red-hover: darken($color-red, 10%);
+
+$color-blue: #70bbfd;
+$color-blue-hover: darken($color-blue, 10%);
+
+$color-gray: #787985;
+$color-light-gray: #d8dfe9;
+
+$color-green: #b8e986;
+$color-green-hover: darken($color-green, 10%);
