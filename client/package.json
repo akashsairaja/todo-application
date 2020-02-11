@@ -29,10 +29,6 @@
   },
   "author": "[akashsairaja@gmail.com]",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:akashsairaja/todo-application.git"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
