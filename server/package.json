@@ -19,5 +19,9 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:akashsairaja/todo-application.git"
   }
 }
