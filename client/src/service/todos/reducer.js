@@ -7,15 +7,15 @@ const todoReducers = (state = initialState, action) => {
         case todoActionTypes.GET_TODOS_SUCCESS:
             return {
                 todos: action.payload,
-                completedTodos: action.payload.filter(obj => obj.completed),
-                unCompletedTodos: action.payload.filter(obj => !obj.completed)
+                CmplTodos: action.payload.filter(obj => obj.completed),
+                unCmplTodos: action.payload.filter(obj => !obj.completed)
             };
         case todoActionTypes.GET_TODOS_FAILURE:
         case todoActionTypes.FILTER_TODOS_FAILURE:
             return {
                 todos: [],
-                completedTodos: [],
-                unCompletedTodos: []
+                CmplTodos: [],
+                unCmplTodos: []
             };
         case todoActionTypes.ADD_TODOS_SUCCESS:
             return state;

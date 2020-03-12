@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
-import DeleteForeverIcon from 'mdi-react/DeleteForeverIcon';
-import {Card, CardBody, Input, Tooltip} from 'reactstrap';
 import {connect} from "react-redux";
+
+import {Card, CardBody, Input, Tooltip} from 'reactstrap';
 import moment from 'moment';
+import DeleteForeverIcon from 'mdi-react/DeleteForeverIcon';
+
 import {deleteTodos, updatedTodos} from '../../../service/todos/action'
 
 

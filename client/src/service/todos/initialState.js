@@ -1,7 +1,7 @@
 const initialState = {
     todos: [],
-    completedTodos: [],
-    unCompletedTodos: []
+    CmplTodos: [],
+    unCmplTodos: []
 };
 
 export default initialState;

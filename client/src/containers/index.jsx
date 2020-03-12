@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from 'react';
+import {connect} from 'react-redux';
 import {Container, Row, Col} from 'reactstrap';
+
 import TodoList from './components/Item';
 import TodoInput from './components/Input';
-import {connect} from 'react-redux';
+
 import {getTodos} from '../service/todos/action';
 
 
-const TodoApp = ({completedTodos, unCompletedTodos, isLoading, getTodos}) => {
+const TodoApp = ({CmplTodos, unCmplTodos, isLoading, getTodos}) => {
 
     const [showAllTasks, setShowAllTasks] = useState(false);
     const [showPendingTasks, setPendingTasks] = useState(true);
@@ -17,7 +19,7 @@ const TodoApp = ({completedTodos, unCompletedTodos, isLoading, getTodos}) => {
     }, [getTodos]);
 
     useEffect(() => {
-    }, [unCompletedTodos, completedTodos]);
+    }, [unCmplTodos, CmplTodos]);
 
 
     const handleStatus = (status) => {
@@ -51,7 +53,7 @@ const TodoApp = ({completedTodos, unCompletedTodos, isLoading, getTodos}) => {
 
                         {showPendingTasks || showAllTasks ? <React.Fragment>
                             {
-                                unCompletedTodos.map((obj, idx) => {
+                                unCmplTodos.map((obj, idx) => {
                                     return <TodoList key={idx} obj={obj}/>
                                 })
                             }
@@ -64,7 +66,7 @@ const TodoApp = ({completedTodos, unCompletedTodos, isLoading, getTodos}) => {
                         </div>}
                         {showCompletedTasks || showAllTasks ? <React.Fragment>
                             {
-                                completedTodos.map((obj, idx) => {
+                                CmplTodos.map((obj, idx) => {
                                     return <TodoList key={idx} obj={obj}/>
                                 })
                             }
@@ -85,8 +87,8 @@ const mapDispatchToProps = dispatch => ({
 const mapStateToProps = state => ({
     isLoading: state.loaderReducer.isLoading,
     todoList: state.todoReducers.todos,
-    unCompletedTodos: state.todoReducers.unCompletedTodos,
-    completedTodos: state.todoReducers.completedTodos,
+    unCmplTodos: state.todoReducers.unCmplTodos,
+    CmplTodos: state.todoReducers.CmplTodos,
 });
 
 
