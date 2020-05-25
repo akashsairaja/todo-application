@@ -1,5 +1,5 @@
 const initialState = {
-  message: "Welcome to Lima Environment Management",
+  message: "Welcome to React Todo App",
   level: "info",
   icon: "verifiedUser",
   id: 1,

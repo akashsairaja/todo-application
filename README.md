@@ -1,11 +1,10 @@
-# *Todo Application*
+# _Todo Application_
 
-    Todo Application : Simple Todo Appication with React and Node js  
+    Todo Application : Simple Todo Appication with React and Node js
 
 ## System Configuration
 
-Please be sure you are using `nodeJS above 8.9.3 LTS`. 
-
+Please be sure you are using `nodeJS above 8.9.3 LTS`.
 
 ## Get Started
 
@@ -15,55 +14,60 @@ Install the repository locally:
 git clone git@github.com:akashsairaja/todo-application.git
 ```
 
-## Client Settings 
+## Client Settings
 
 ```bash
 cd client
-cmd npm install 
+cmd npm install
 ```
 
-## Server Setting 
+## Server Setting
 
-``` bash
+## If you dont have mongodb please configure with class
+
+```path
+    /client/src/classes
+```
+
+```bash
 cd server
 cmd npm install
 
 cd /helpers
 vi index.js
-modify: mongoUrl=`mongodb://localhost:27017/graphdb`  
+modify: mongoUrl=`mongodb://localhost:27017/graphdb`
 ```
 
 ### Run Client
 
 ```bash
-cd clinet 
+cd clinet
 npm start
 ```
 
-### Run Server 
+### Run Server
 
 ```bash
-cd server 
+cd server
 npm start
 ```
 
 Open `http://localhost:3000/` in browser.
 
-
-![alt text](images/1.png)
-
+![alt text](images/1.gif)
 
 ## Front-End Documentation
-   - [React](https://facebook.github.io/react/)
-   - [Hooks](https://reactjs.org/docs/hooks-intro.html)
-   - [Redux](https://redux.js.org/introduction/getting-started)
-   - [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
-   - [Reactstrap](https://reactstrap.github.io/components/alerts/)
-   - [SASS](https://sass-lang.com/guide)
 
+- [React](https://facebook.github.io/react/)
+- [Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [Redux](https://redux.js.org/introduction/getting-started)
+- [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+- [Reactstrap](https://reactstrap.github.io/components/alerts/)
+- [SASS](https://sass-lang.com/guide)
 
 ## Back-End Documentation
-   - [NodeJS](https://nodejs.org/en/docs/)
-   - [Express](https://expressjs.com/en/guide/routing.html)
-   - [Mongoose](https://mongoosejs.com/docs/guide.html)
-   - [MongoDB](https://docs.mongodb.com/)
+
+- [NodeJS](https://nodejs.org/en/docs/)
+- [Express](https://expressjs.com/en/guide/routing.html)
+- [Mongoose](https://mongoosejs.com/docs/guide.html)
+- [MongoDB](https://docs.mongodb.com/)
