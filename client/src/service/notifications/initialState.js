@@ -1,7 +1,8 @@
 const initialState = {
-    message: "Hello Welcome todo Application",
-    level: "info",
-    icon: "verifiedUser"
+  message: "Welcome to Lima Environment Management",
+  level: "info",
+  icon: "verifiedUser",
+  id: 1,
 };
 
 export default initialState;

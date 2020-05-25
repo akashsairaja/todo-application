@@ -67,7 +67,3 @@ Open `http://localhost:3000/` in browser.
    - [Express](https://expressjs.com/en/guide/routing.html)
    - [Mongoose](https://mongoosejs.com/docs/guide.html)
    - [MongoDB](https://docs.mongodb.com/)
-
-```bash
-npm run doc
-```

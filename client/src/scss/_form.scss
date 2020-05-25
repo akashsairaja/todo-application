@@ -1,0 +1,78 @@
+@import "~react-datepicker/dist/react-datepicker.css";
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  direction: ltr;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 12px;
+    height: 32px;
+    transition: border 0.3s;
+    background: transparent;
+
+    &::-webkit-input-placeholder {
+      color: $color-additional;
+    }
+    &::-moz-placeholder {
+      color: $color-additional;
+    }
+    /* Firefox 19+ */
+    &:-moz-placeholder {
+      color: $color-additional;
+    }
+    /* Firefox 18- */
+    &:-ms-input-placeholder {
+      color: $color-additional;
+    }
+
+    border: 1px solid #8f98a0;
+    color: #646777;
+
+    &[disabled] {
+      background: #f2f4f7;
+
+      &:focus,
+      &:active {
+        border-color: #333246;
+      }
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      border-color: $color-accent;
+    }
+  }
+
+  textarea {
+    min-height: 85px;
+  }
+}
+
+.form__form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.form__form-group-field {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  direction: ltr;
+}
+
+.form__form-group-label {
+  margin-bottom: 4px;
+  display: inline-block;
+  color: #333246;
+
+  span {
+    color: #dddddd;
+  }
+}

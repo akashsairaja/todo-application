@@ -1,5 +1,4 @@
 .page-title {
-
   text-align: left;
   font-weight: 500;
   text-transform: capitalize;
@@ -14,12 +13,19 @@
   }
 }
 
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-grab {
+  cursor: -webkit-grab !important;
+}
+
 .todo {
   margin-bottom: 15px;
 }
 
 .todo__checkbox {
-
   input:checked ~ .todo__checkbox-label {
     color: $color-additional;
     text-decoration: line-through;
@@ -30,7 +36,6 @@
 }
 
 .todo-app {
-
   .card {
     padding-bottom: 20px;
   }
@@ -100,10 +105,10 @@
           }
         }
 
-        .todo__due-date, .todo__priority {
+        .todo__due-date,
+        .todo__priority {
           padding: 0 5px;
           background-color: #fafbfe;
-
         }
 
         .todo__due-date {
@@ -112,7 +117,7 @@
 
         .todo__priority {
           margin-right: 5px;
-          color: #646777
+          color: #646777;
         }
       }
 
@@ -150,18 +155,16 @@
           }
         }
       }
-
     }
-
   }
 
   .todo__item-comleted {
-
     h3 {
       text-decoration: line-through;
     }
 
-    h3, .todo__content {
+    h3,
+    .todo__content {
       color: #999999;
     }
   }
@@ -248,7 +251,7 @@
       border-radius: 50%;
       background-color: #fafbfe;
       opacity: 0;
-      transition: .2s;
+      transition: 0.2s;
     }
 
     .todo__filter-radio:checked + label:after {
