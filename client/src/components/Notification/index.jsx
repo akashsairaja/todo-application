@@ -28,7 +28,7 @@ const NotificationContainer = ({ icon, message, level, id }) => {
       level,
       key: id,
     });
-  });
+  },[]);
 
   return <NotificationSystem ref={notificationSystem} style={style} />;
 };
